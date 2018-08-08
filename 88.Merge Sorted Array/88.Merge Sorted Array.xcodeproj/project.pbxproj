@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA088E712112928F0068073D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA088E702112928F0068073D /* main.cpp */; };
+		CA87B127211B07E200438E29 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA87B126211B07E200438E29 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CA088E6B2112928F0068073D /* CopyFiles */ = {
+		CA87B121211B07E200438E29 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CA088E6D2112928F0068073D /* 88.Merge Sorted Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "88.Merge Sorted Array"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA088E702112928F0068073D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CA87B123211B07E200438E29 /* 88.Merge Sorted Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "88.Merge Sorted Array"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA87B126211B07E200438E29 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA088E6A2112928F0068073D /* Frameworks */ = {
+		CA87B120211B07E200438E29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA088E642112928F0068073D = {
+		CA87B11A211B07E200438E29 = {
 			isa = PBXGroup;
 			children = (
-				CA088E6F2112928F0068073D /* 88.Merge Sorted Array */,
-				CA088E6E2112928F0068073D /* Products */,
+				CA87B125211B07E200438E29 /* 88.Merge Sorted Array */,
+				CA87B124211B07E200438E29 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CA088E6E2112928F0068073D /* Products */ = {
+		CA87B124211B07E200438E29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA088E6D2112928F0068073D /* 88.Merge Sorted Array */,
+				CA87B123211B07E200438E29 /* 88.Merge Sorted Array */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA088E6F2112928F0068073D /* 88.Merge Sorted Array */ = {
+		CA87B125211B07E200438E29 /* 88.Merge Sorted Array */ = {
 			isa = PBXGroup;
 			children = (
-				CA088E702112928F0068073D /* main.cpp */,
+				CA87B126211B07E200438E29 /* main.cpp */,
 			);
 			path = "88.Merge Sorted Array";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA088E6C2112928F0068073D /* 88.Merge Sorted Array */ = {
+		CA87B122211B07E200438E29 /* 88.Merge Sorted Array */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA088E742112928F0068073D /* Build configuration list for PBXNativeTarget "88.Merge Sorted Array" */;
+			buildConfigurationList = CA87B12A211B07E200438E29 /* Build configuration list for PBXNativeTarget "88.Merge Sorted Array" */;
 			buildPhases = (
-				CA088E692112928F0068073D /* Sources */,
-				CA088E6A2112928F0068073D /* Frameworks */,
-				CA088E6B2112928F0068073D /* CopyFiles */,
+				CA87B11F211B07E200438E29 /* Sources */,
+				CA87B120211B07E200438E29 /* Frameworks */,
+				CA87B121211B07E200438E29 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,53 +79,53 @@
 			);
 			name = "88.Merge Sorted Array";
 			productName = "88.Merge Sorted Array";
-			productReference = CA088E6D2112928F0068073D /* 88.Merge Sorted Array */;
+			productReference = CA87B123211B07E200438E29 /* 88.Merge Sorted Array */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA088E652112928F0068073D /* Project object */ = {
+		CA87B11B211B07E200438E29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Abysman;
 				TargetAttributes = {
-					CA088E6C2112928F0068073D = {
+					CA87B122211B07E200438E29 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = CA088E682112928F0068073D /* Build configuration list for PBXProject "88.Merge Sorted Array" */;
+			buildConfigurationList = CA87B11E211B07E200438E29 /* Build configuration list for PBXProject "88.Merge Sorted Array" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CA088E642112928F0068073D;
-			productRefGroup = CA088E6E2112928F0068073D /* Products */;
+			mainGroup = CA87B11A211B07E200438E29;
+			productRefGroup = CA87B124211B07E200438E29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA088E6C2112928F0068073D /* 88.Merge Sorted Array */,
+				CA87B122211B07E200438E29 /* 88.Merge Sorted Array */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA088E692112928F0068073D /* Sources */ = {
+		CA87B11F211B07E200438E29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA088E712112928F0068073D /* main.cpp in Sources */,
+				CA87B127211B07E200438E29 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CA088E722112928F0068073D /* Debug */ = {
+		CA87B128211B07E200438E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -183,7 +183,7 @@
 			};
 			name = Debug;
 		};
-		CA088E732112928F0068073D /* Release */ = {
+		CA87B129211B07E200438E29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +234,7 @@
 			};
 			name = Release;
 		};
-		CA088E752112928F0068073D /* Debug */ = {
+		CA87B12B211B07E200438E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -242,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		CA088E762112928F0068073D /* Release */ = {
+		CA87B12C211B07E200438E29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -253,25 +253,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA088E682112928F0068073D /* Build configuration list for PBXProject "88.Merge Sorted Array" */ = {
+		CA87B11E211B07E200438E29 /* Build configuration list for PBXProject "88.Merge Sorted Array" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA088E722112928F0068073D /* Debug */,
-				CA088E732112928F0068073D /* Release */,
+				CA87B128211B07E200438E29 /* Debug */,
+				CA87B129211B07E200438E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA088E742112928F0068073D /* Build configuration list for PBXNativeTarget "88.Merge Sorted Array" */ = {
+		CA87B12A211B07E200438E29 /* Build configuration list for PBXNativeTarget "88.Merge Sorted Array" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA088E752112928F0068073D /* Debug */,
-				CA088E762112928F0068073D /* Release */,
+				CA87B12B211B07E200438E29 /* Debug */,
+				CA87B12C211B07E200438E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA088E652112928F0068073D /* Project object */;
+	rootObject = CA87B11B211B07E200438E29 /* Project object */;
 }
