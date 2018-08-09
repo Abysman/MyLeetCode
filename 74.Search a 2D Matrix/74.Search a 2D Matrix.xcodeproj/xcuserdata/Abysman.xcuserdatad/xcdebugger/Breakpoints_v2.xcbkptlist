@@ -15,8 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "main(int argc, const char * argv[])"
-            landmarkType = "9">
+            landmarkName = "searchMatrix(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int target)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
