@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA87B114211A790B00438E29 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA87B113211A790B00438E29 /* main.cpp */; };
+		CABB694621251C65002F93FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CABB694521251C65002F93FD /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CA87B10E211A790B00438E29 /* CopyFiles */ = {
+		CABB694021251C65002F93FD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CA87B110211A790B00438E29 /* 28.Implement strStr() */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "28.Implement strStr()"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA87B113211A790B00438E29 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CABB694221251C65002F93FD /* 28.Implement strStr() */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "28.Implement strStr()"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CABB694521251C65002F93FD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA87B10D211A790B00438E29 /* Frameworks */ = {
+		CABB693F21251C65002F93FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA87B107211A790B00438E29 = {
+		CABB693921251C65002F93FD = {
 			isa = PBXGroup;
 			children = (
-				CA87B112211A790B00438E29 /* 28.Implement strStr() */,
-				CA87B111211A790B00438E29 /* Products */,
+				CABB694421251C65002F93FD /* 28.Implement strStr() */,
+				CABB694321251C65002F93FD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CA87B111211A790B00438E29 /* Products */ = {
+		CABB694321251C65002F93FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA87B110211A790B00438E29 /* 28.Implement strStr() */,
+				CABB694221251C65002F93FD /* 28.Implement strStr() */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA87B112211A790B00438E29 /* 28.Implement strStr() */ = {
+		CABB694421251C65002F93FD /* 28.Implement strStr() */ = {
 			isa = PBXGroup;
 			children = (
-				CA87B113211A790B00438E29 /* main.cpp */,
+				CABB694521251C65002F93FD /* main.cpp */,
 			);
 			path = "28.Implement strStr()";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA87B10F211A790B00438E29 /* 28.Implement strStr() */ = {
+		CABB694121251C65002F93FD /* 28.Implement strStr() */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA87B117211A790B00438E29 /* Build configuration list for PBXNativeTarget "28.Implement strStr()" */;
+			buildConfigurationList = CABB694921251C65002F93FD /* Build configuration list for PBXNativeTarget "28.Implement strStr()" */;
 			buildPhases = (
-				CA87B10C211A790B00438E29 /* Sources */,
-				CA87B10D211A790B00438E29 /* Frameworks */,
-				CA87B10E211A790B00438E29 /* CopyFiles */,
+				CABB693E21251C65002F93FD /* Sources */,
+				CABB693F21251C65002F93FD /* Frameworks */,
+				CABB694021251C65002F93FD /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,53 +79,53 @@
 			);
 			name = "28.Implement strStr()";
 			productName = "28.Implement strStr()";
-			productReference = CA87B110211A790B00438E29 /* 28.Implement strStr() */;
+			productReference = CABB694221251C65002F93FD /* 28.Implement strStr() */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA87B108211A790B00438E29 /* Project object */ = {
+		CABB693A21251C65002F93FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Abysman;
 				TargetAttributes = {
-					CA87B10F211A790B00438E29 = {
+					CABB694121251C65002F93FD = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = CA87B10B211A790B00438E29 /* Build configuration list for PBXProject "28.Implement strStr()" */;
+			buildConfigurationList = CABB693D21251C65002F93FD /* Build configuration list for PBXProject "28.Implement strStr()" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CA87B107211A790B00438E29;
-			productRefGroup = CA87B111211A790B00438E29 /* Products */;
+			mainGroup = CABB693921251C65002F93FD;
+			productRefGroup = CABB694321251C65002F93FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA87B10F211A790B00438E29 /* 28.Implement strStr() */,
+				CABB694121251C65002F93FD /* 28.Implement strStr() */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA87B10C211A790B00438E29 /* Sources */ = {
+		CABB693E21251C65002F93FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA87B114211A790B00438E29 /* main.cpp in Sources */,
+				CABB694621251C65002F93FD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CA87B115211A790B00438E29 /* Debug */ = {
+		CABB694721251C65002F93FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -183,7 +183,7 @@
 			};
 			name = Debug;
 		};
-		CA87B116211A790B00438E29 /* Release */ = {
+		CABB694821251C65002F93FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +234,7 @@
 			};
 			name = Release;
 		};
-		CA87B118211A790B00438E29 /* Debug */ = {
+		CABB694A21251C65002F93FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -242,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		CA87B119211A790B00438E29 /* Release */ = {
+		CABB694B21251C65002F93FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -253,25 +253,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA87B10B211A790B00438E29 /* Build configuration list for PBXProject "28.Implement strStr()" */ = {
+		CABB693D21251C65002F93FD /* Build configuration list for PBXProject "28.Implement strStr()" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA87B115211A790B00438E29 /* Debug */,
-				CA87B116211A790B00438E29 /* Release */,
+				CABB694721251C65002F93FD /* Debug */,
+				CABB694821251C65002F93FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA87B117211A790B00438E29 /* Build configuration list for PBXNativeTarget "28.Implement strStr()" */ = {
+		CABB694921251C65002F93FD /* Build configuration list for PBXNativeTarget "28.Implement strStr()" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA87B118211A790B00438E29 /* Debug */,
-				CA87B119211A790B00438E29 /* Release */,
+				CABB694A21251C65002F93FD /* Debug */,
+				CABB694B21251C65002F93FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA87B108211A790B00438E29 /* Project object */;
+	rootObject = CABB693A21251C65002F93FD /* Project object */;
 }
