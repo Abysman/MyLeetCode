@@ -2,54 +2,49 @@
 //  main.cpp
 //  60.Permutation Sequence
 //
-//  Created by Abysman on 2018/8/2.
+//  Created by Abysman on 2018/8/18.
 //  Copyright © 2018年 Abysman. All rights reserved.
 //
 
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
 class Solution {
 public:
     string getPermutation(int n, int k) {
-        string tmp = "";
-        vector<string> record;
-        helper(record, tmp, k, n);
-        cout << record.size() << "\n";
-        return record[record.size() - 1];
-    }
-    
-    int factorial(int n) {
-        int result = 1;
-        for (int i = 1; i < n + 1; i++) {
-            return
+        vector<int> tmp;
+        for (int i = 0; i < n; ++i) {
+            tmp.push_back(i + 1);
         }
-    }
-    
-    void helper(vector<string>& record, string& s, int k, int n) {
-        if (s.length() == n) {
-            record.push_back(s);
-            return;
-        }
-        for (int i = 1; i < n + 1; ++i) {
-            if (record.size() == k) return;
-            string tmp = to_string(i);
-            if (s.find(tmp) != string::npos) {
-                continue;
+        for (int i = 0; i < k - 1; ++i) {
+            int j, h;
+            for (j = n - 2; j >= 0; j--) {
+                if (tmp[j] < tmp[j + 1]) break;
             }
-            s += tmp;
-            helper(record, s, k, n);
-            if (record.size() == k) return;
-            s.erase(s.length() - 1);
+            if (j < 0) reverse(tmp.begin(), tmp.end());
+            else {
+                for (h = n - 1; h > j; h--) {
+                    if (tmp[h] > tmp[j]) break;
+                }
+                swap(tmp[h], tmp[j]);
+                reverse(tmp.begin() + j + 1, tmp.end());
+            }
+            string res = "";
         }
+        string res = "";
+        for (int i = 0; i < tmp.size(); ++i) {
+            res = res + to_string(tmp[i]);
+        }
+        return res;
     }
+    
 };
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Solution sol = Solution();
-    sol.getPermutation(3, 3);
+    std::cout << "Hello, World!\n";
     return 0;
 }

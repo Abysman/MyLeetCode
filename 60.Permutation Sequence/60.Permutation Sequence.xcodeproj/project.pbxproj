@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA088E8421130ED70068073D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA088E8321130ED70068073D /* main.cpp */; };
+		CABB69B821280808002F93FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CABB69B721280808002F93FD /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CA088E7E21130ED70068073D /* CopyFiles */ = {
+		CABB69B221280808002F93FD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CA088E8021130ED70068073D /* 60.Permutation Sequence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "60.Permutation Sequence"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA088E8321130ED70068073D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CABB69B421280808002F93FD /* 60.Permutation Sequence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "60.Permutation Sequence"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CABB69B721280808002F93FD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA088E7D21130ED70068073D /* Frameworks */ = {
+		CABB69B121280808002F93FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA088E7721130ED70068073D = {
+		CABB69AB21280808002F93FD = {
 			isa = PBXGroup;
 			children = (
-				CA088E8221130ED70068073D /* 60.Permutation Sequence */,
-				CA088E8121130ED70068073D /* Products */,
+				CABB69B621280808002F93FD /* 60.Permutation Sequence */,
+				CABB69B521280808002F93FD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CA088E8121130ED70068073D /* Products */ = {
+		CABB69B521280808002F93FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA088E8021130ED70068073D /* 60.Permutation Sequence */,
+				CABB69B421280808002F93FD /* 60.Permutation Sequence */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA088E8221130ED70068073D /* 60.Permutation Sequence */ = {
+		CABB69B621280808002F93FD /* 60.Permutation Sequence */ = {
 			isa = PBXGroup;
 			children = (
-				CA088E8321130ED70068073D /* main.cpp */,
+				CABB69B721280808002F93FD /* main.cpp */,
 			);
 			path = "60.Permutation Sequence";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA088E7F21130ED70068073D /* 60.Permutation Sequence */ = {
+		CABB69B321280808002F93FD /* 60.Permutation Sequence */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA088E8721130ED70068073D /* Build configuration list for PBXNativeTarget "60.Permutation Sequence" */;
+			buildConfigurationList = CABB69BB21280808002F93FD /* Build configuration list for PBXNativeTarget "60.Permutation Sequence" */;
 			buildPhases = (
-				CA088E7C21130ED70068073D /* Sources */,
-				CA088E7D21130ED70068073D /* Frameworks */,
-				CA088E7E21130ED70068073D /* CopyFiles */,
+				CABB69B021280808002F93FD /* Sources */,
+				CABB69B121280808002F93FD /* Frameworks */,
+				CABB69B221280808002F93FD /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,53 +79,53 @@
 			);
 			name = "60.Permutation Sequence";
 			productName = "60.Permutation Sequence";
-			productReference = CA088E8021130ED70068073D /* 60.Permutation Sequence */;
+			productReference = CABB69B421280808002F93FD /* 60.Permutation Sequence */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA088E7821130ED70068073D /* Project object */ = {
+		CABB69AC21280808002F93FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Abysman;
 				TargetAttributes = {
-					CA088E7F21130ED70068073D = {
+					CABB69B321280808002F93FD = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = CA088E7B21130ED70068073D /* Build configuration list for PBXProject "60.Permutation Sequence" */;
+			buildConfigurationList = CABB69AF21280808002F93FD /* Build configuration list for PBXProject "60.Permutation Sequence" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CA088E7721130ED70068073D;
-			productRefGroup = CA088E8121130ED70068073D /* Products */;
+			mainGroup = CABB69AB21280808002F93FD;
+			productRefGroup = CABB69B521280808002F93FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA088E7F21130ED70068073D /* 60.Permutation Sequence */,
+				CABB69B321280808002F93FD /* 60.Permutation Sequence */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA088E7C21130ED70068073D /* Sources */ = {
+		CABB69B021280808002F93FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA088E8421130ED70068073D /* main.cpp in Sources */,
+				CABB69B821280808002F93FD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CA088E8521130ED70068073D /* Debug */ = {
+		CABB69B921280808002F93FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -183,7 +183,7 @@
 			};
 			name = Debug;
 		};
-		CA088E8621130ED70068073D /* Release */ = {
+		CABB69BA21280808002F93FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +234,7 @@
 			};
 			name = Release;
 		};
-		CA088E8821130ED70068073D /* Debug */ = {
+		CABB69BC21280808002F93FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -242,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		CA088E8921130ED70068073D /* Release */ = {
+		CABB69BD21280808002F93FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -253,25 +253,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA088E7B21130ED70068073D /* Build configuration list for PBXProject "60.Permutation Sequence" */ = {
+		CABB69AF21280808002F93FD /* Build configuration list for PBXProject "60.Permutation Sequence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA088E8521130ED70068073D /* Debug */,
-				CA088E8621130ED70068073D /* Release */,
+				CABB69B921280808002F93FD /* Debug */,
+				CABB69BA21280808002F93FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA088E8721130ED70068073D /* Build configuration list for PBXNativeTarget "60.Permutation Sequence" */ = {
+		CABB69BB21280808002F93FD /* Build configuration list for PBXNativeTarget "60.Permutation Sequence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA088E8821130ED70068073D /* Debug */,
-				CA088E8921130ED70068073D /* Release */,
+				CABB69BC21280808002F93FD /* Debug */,
+				CABB69BD21280808002F93FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA088E7821130ED70068073D /* Project object */;
+	rootObject = CABB69AC21280808002F93FD /* Project object */;
 }
