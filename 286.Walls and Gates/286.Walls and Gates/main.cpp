@@ -23,6 +23,18 @@ public:
             }
         }
     }
+    
+    void helper(std::vector<std::vector<int>>& rooms, int dir[4][2], int r, int c, int distance) {
+        if (rooms[r][c] < distance) return;
+        rooms[r][c] = distance;
+        for (int i = 0; i < 4; ++i) {
+            int next_r = r + dir[i][0];
+            int next_c = c + dir[i][1];
+            if (next_r >= 0 && next_r <= rooms.size() - 1 && next_c >= 0 && next_c <= rooms[0].size() - 1) {
+                helper(rooms, dir, next_r, next_c, distance + 1);
+            }
+        }
+    }
 };
 
 int main(int argc, const char * argv[]) {
