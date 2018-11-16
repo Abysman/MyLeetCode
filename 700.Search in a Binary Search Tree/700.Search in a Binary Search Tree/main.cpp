@@ -17,20 +17,15 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
-public:
-    TreeNode* searchBST(TreeNode* root, int val) {
-        if (!root ) return NULL;
-        TreeNode* res;
-        if (val == root->val) return root;
-        else if (val < root->val) res = searchBST(root->left, val);
-        else if (val > root->val) res = searchBST(root->right, val);
-        return res;
-    }
-};
+void test(int& x){
+    x+=1;
+}
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    int x =3;
+    test(x);
+    std::cout << x;
     return 0;
 }
