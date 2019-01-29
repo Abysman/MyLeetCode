@@ -23,6 +23,23 @@ void rotate(vector<vector<int>>& matrix) {
     }
 }
 
+//  mine
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        int n = matrix.size();
+        int count = 0;
+        for (int j = n; j > 0; j -= 2) {
+            for (int i = 0; i < j - 1; ++i) {
+                swap(matrix[count][i + count], matrix[n - 1 - i - count][count]);
+                swap(matrix[n - 1 - i - count][count], matrix[n - 1 - count][n - 1 - i - count]);
+                swap(matrix[n - 1 - count][n - 1 - i - count], matrix[count + i][n - 1 - count]);
+            }
+            count += 1;
+        }
+    }
+};
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
