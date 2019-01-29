@@ -13,22 +13,21 @@
 
 class Solution {
 public:
-    std::vector<int> topKFrequent(std::vector<int>& nums, int k) {
-        std::unordered_map<int,int> map;
-        
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        unordered_map<int,int> map;
         for(int num : nums){
             map[num]++;
         }
         
-        std::vector<int> res;
-        std::priority_queue<std::pair<int, int>> pq;
-        for (auto it = map.begin(); it != map.end(); it++){
-            pq.push({it->second, it->first});
-        }
-        for (int i = 0; i < k; ++i) {
-            auto p = pq.top();
-            res.push_back(p.second);
-            pq.pop();
+        vector<int> res;
+        // pair<first, second>: first is frequency,  second is number
+        priority_queue<pair<int,int>> pq;
+        for(auto it = map.begin(); it != map.end(); it++){
+            pq.push(make_pair(it->second, it->first));
+            if(pq.size() > (int)map.size() - k){
+                res.push_back(pq.top().second);
+                pq.pop();
+            }
         }
         return res;
     }
