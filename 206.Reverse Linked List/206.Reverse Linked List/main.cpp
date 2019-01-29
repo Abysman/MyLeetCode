@@ -20,14 +20,15 @@ struct ListNode {
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode* pre = NULL;
+        if (!head || !head->next) return head;
+        ListNode* last = NULL;
         while (head) {
-            ListNode* next = head -> next;
-            head -> next = pre;
-            pre = head;
-            head = next;
+            ListNode* n = head->next;
+            head->next = last;
+            last = head;
+            head = n;
         }
-        return pre;
+        return last;
     }
 };
 
