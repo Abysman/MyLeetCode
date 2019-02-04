@@ -15,45 +15,29 @@ using namespace std;
 class Solution {
 public:
     bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites) {
-        map<int, int> inDegree;
-        queue<int> course;
+        vector<vector<int>> adj(numCourses);
+        vector<int> indegrees(numCourses);
+        queue<int> q;
         int count = 0;
+        for (auto p: prerequisites) {
+            indegrees[p.first] += 1;
+            adj[p.second].push_back(p.first);
+        }
         
         for (int i = 0; i < numCourses; ++i) {
-            inDegree[i] = 0;
+            if (indegrees[i] == 0) q.push(i);
         }
         
-        for (int i = 0; i < prerequisites.size(); ++i) {
-            inDegree[prerequisites[i].second] += 1;
-        }
-        
-        for (int i = 0; i < inDegree.size(); ++i) {
-            if (inDegree[i] == 0) {
-                course.push(i);
-            }
-        }
-        
-        while (!course.empty()) {
-            int curr = course.front();
-            // cout << "curr:" << curr << "\n";
-            for (int i = 0; i < prerequisites.size(); ++i) {
-                if (prerequisites[i].first == curr) {
-                    inDegree[prerequisites[i].second]--;
-                    // cout << curr << " " << prerequisites[i].second << " " << inDegree[prerequisites[i].second] << "\n";
-                    if (inDegree[prerequisites[i].second] == 0) {
-                        // cout << prerequisites[i].second << "\n";
-                        course.push(prerequisites[i].second);
-                    }
-                }
-            }
-            inDegree[curr] = -1;
-            course.pop();
+        while (!q.empty()) {
+            int curr = q.front();
+            q.pop();
             count++;
+            for (auto neighbr: adj[curr]) {
+                indegrees[neighbr]--;
+                if (indegrees[neighbr] == 0) q.push(neighbr);
+            }
         }
-        
-        if (count == numCourses) return true;
-        else return false;
-        
+        return count == numCourses;
     }
 };
 
