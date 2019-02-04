@@ -21,26 +21,34 @@ struct Result {
     }
 };
 
-map<int, double> getHighFive(vector<Result> scores) {
-    map<int, priority_queue<int, vector<int>>> pValue;
-    for (Result res: scores) {
-        int id = res.id;
-        if (pValue.find(id) != pValue.end()) {
-            pValue[id].push(res.score);
-            if (pValue[id].size() > 5) pValue[id].pop();
-        }
+vector<int> topfive(vector<int> a){
+    priority_queue<int> q;
+    for(int i=0; i< a.size(); i++) q.push( a);
+    vector<int> top5;
+    int five = 5;
+    while(five){
+        top5.push_back(q.top());
+        q.pop();
+        five--;
     }
-    map<int, double> res;
-    for (auto &p:pValue) {
-        double sum = 0;
-        priority_queue<int, vector<int>> curr = p.second;
-        for (int i = 0; i < 5; ++i) {
-            sum += curr.top();
-            curr.pop();
-        }
-        res[p.first] = sum / 5.0;
+    return top5;
+}
+
+map<int,vector<int> > hfive(vector<Result> tresults){
+    map<int, vector<int> > stds_scores;
+    for(int i = 0; i< tresults.size(); i++){
+        TestResult stdscore = tresults;
+        stds_scores[stdscore.studentId].push_back(stdscore.testScore);
     }
-    return res;
+    map<int, vector<int> > final;
+    map<int, vector<int> >::iterator it;
+    for(it = stds_scores.begin(); it != stds_scores.end(); it++){
+        int stdid = it->first;
+        vector<int> scores = it->second;
+        vector<int> top5 = topfive(scores);
+        final[stdid] = top5;
+    }
+    return final;
 }
 
 int main(int argc, const char * argv[]) {
