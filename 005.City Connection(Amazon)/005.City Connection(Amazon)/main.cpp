@@ -27,7 +27,7 @@ public:
         string city1 = conit->node1, city2 = conit->node2;
         int cost = conit->cost;
         graph[city1].city = city1;
-        graph[city1].adj_cost[city_2] = cost;
+        graph[city1].adj_cost[city2] = cost;
         
     }
 }
