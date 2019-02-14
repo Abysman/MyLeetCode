@@ -8,6 +8,8 @@
 
 #include <iostream>
 
+
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -20,20 +22,19 @@
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        if (!root) return vector<int> ();
         vector<int> res;
-        stack<TreeNode* > nodeStack;
-        TreeNode* curr = root;
+        if (!root) return res;
+        stack<TreeNode*> s;
         
-        while (curr != NULL || !nodeStack.empty()) {
-            while (curr) {
-                nodeStack.push(curr);
-                curr = curr->left;
+        while (root || !s.empty()) {
+            while (root) {
+                s.push(root);
+                root = root->left;
             }
-            TreeNode* tmp = nodeStack.top();
-            res.push_back(tmp->val);
-            nodeStack.pop();
-            curr = tmp->right;
+            root = s.top();
+            s.pop();
+            res.push_back(root->val);
+            root = root->right;
         }
         return res;
     }
