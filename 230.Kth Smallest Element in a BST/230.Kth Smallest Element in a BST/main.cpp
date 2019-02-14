@@ -23,23 +23,18 @@ using namespace std;
 class Solution {
 public:
     int kthSmallest(TreeNode* root, int k) {
-        int count = 0;
         stack<TreeNode*> s;
-        TreeNode* curr = root;
-        
-        while (curr || !s.empty()) {
-            while (curr) {
-                s.push(curr);
-                curr = curr->left;
+        while (root || !s.empty()) {
+            while (root) {
+                s.push(root);
+                root = root->left;
             }
-            if (s.top()) {
-                count += 1;
-                curr = s.top();
-                s.pop();
-                if (count  == k) return curr->val;
-                curr = curr->right;
-            }
+            root = s.top();
+            if (--k == 0) return root->val;
+            s.pop();
+            root = root->right;
         }
+        return -1;
     }
 };
 
