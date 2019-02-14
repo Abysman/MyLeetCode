@@ -11,6 +11,36 @@
 
 using namespace std;
 
+//class Solution {
+//public:
+//    void sortColors(vector<int>& nums) {
+//        int r = 0, b = nums.size() - 1;
+//        for (int i = 0; i < nums.size(); ++i) {
+//            while (nums[i] == 2 && i < b) swap(nums[i], nums[b--]);
+//            while (nums[i] == 0 && i > r) swap(nums[i], nums[r++]);
+//        }
+//    }
+//};
+
+//class Solution {
+//public:
+//    void sortColors(vector<int>& nums) {
+//        int r = -1, w = -1, b = -1;
+//        for (int i = 0; i < nums.size(); ++i) {
+//            if (nums[i] == 0) {
+//                nums[++b] = 2;
+//                nums[++w] = 1;
+//                nums[++r] = 0;
+//            }
+//            else if (nums[i] == 1) {
+//                nums[++b] = 2;
+//                nums[++w] = 1;
+//            }
+//            else if (nums[i] == 2) nums[++b] = 2;
+//        }
+//    }
+//};
+
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
