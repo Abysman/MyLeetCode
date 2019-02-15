@@ -10,26 +10,27 @@
 
 //  Iterative
 //  Referenced from https://leetcode.com/problems/validate-binary-search-tree/discuss/32112/Learn-one-iterative-inorder-traversal-apply-it-to-multiple-tree-questions-(Java-Solution)
+
 //class Solution {
 //public:
 //    bool isValidBST(TreeNode* root) {
 //        if (!root) return true;
-//        TreeNode* pre = NULL;
-//        stack<TreeNode* > s;
-//        while (root != NULL || !s.empty()) {
-//            while (root != NULL) {
+//        stack<TreeNode*> s;
+//        TreeNode* prev = NULL;
+//        
+//        while (root || !s.empty()) {
+//            while (root) {
 //                s.push(root);
 //                root = root->left;
 //            }
 //            root = s.top();
+//            if (prev && prev->val >= root->val) return false;
+//            prev = root;
 //            s.pop();
-//            if (pre != NULL && root->val <= pre->val) return false;
-//            pre = root;
 //            root = root->right;
 //        }
 //        return true;
 //    }
-//
 //};
 
 
