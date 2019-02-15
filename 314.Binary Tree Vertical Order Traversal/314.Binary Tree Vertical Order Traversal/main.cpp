@@ -25,6 +25,48 @@ public:
     vector<vector<int>> verticalOrder(TreeNode* root) {
         vector<vector<int>> res;
         if (!root) return res;
+        map<int, vector<int>> m2;
+        m2[0].push_back(root->val);
+        queue<pair<int, TreeNode*>> q;
+        q.push(make_pair(0, root));
+        
+        while (!q.empty()) {
+            TreeNode* curr = q.front().second;
+            int currVerticalId = q.front().first;
+            q.pop();
+            if (curr->left) {
+                m2[currVerticalId - 1].push_back(curr->left->val);
+                q.push(make_pair(currVerticalId - 1, curr->left));
+            }
+            if (curr->right) {
+                m2[currVerticalId + 1].push_back(curr->right->val);
+                q.push(make_pair(currVerticalId + 1, curr->right));
+            }
+        }
+        
+        for (auto r: m2) {
+            vector<int> tmp;
+            for (auto n: r.second) tmp.push_back(n);
+            res.push_back(tmp);
+        }
+        return res;
+    }
+};
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    vector<vector<int>> verticalOrder(TreeNode* root) {
+        vector<vector<int>> res;
+        if (!root) return res;
         unordered_map<TreeNode*, int> m1;
         map<int, vector<int>> m2;
         m1[root] = 0;
