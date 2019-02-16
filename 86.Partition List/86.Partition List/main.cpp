@@ -16,26 +16,27 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
 class Solution {
 public:
     ListNode* partition(ListNode* head, int x) {
         if (!head) return head;
-        ListNode *curr = head, *head1 = new ListNode(-1), *head2 = new ListNode(-1), *newHead1 = head1, *newHead2 = head2;
+        ListNode *dummyhead1 = new ListNode(-1), *dummyhead2 = new ListNode(-1), *head1 = dummyhead1, *head2 = dummyhead2;
+        ListNode* curr = head;
         while (curr) {
-            ListNode* next = curr->next;
-            if (curr->val < x) {
-                head1->next = curr;
-                head1 = curr;
-            }
-            else {
+            if (curr->val >= x) {
                 head2->next = curr;
                 head2 = curr;
             }
-            curr = next;
+            else {
+                head1->next = curr;
+                head1 = curr;
+            }
+            curr = curr->next;
         }
-        head1->next = newHead2->next;
         head2->next = NULL;
-        return newHead1->next;
+        head1->next = dummyhead2->next;
+        return dummyhead1->next;
     }
 };
 
