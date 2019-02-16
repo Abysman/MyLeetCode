@@ -45,21 +45,22 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-        if (!root) return vector<vector<int>>();
-        queue<TreeNode*> nodeQueue;
         vector<vector<int>> res;
-        nodeQueue.push(root);
-        while (!nodeQueue.empty()) {
-            int n = nodeQueue.size();
-            vector<int> curr_res;
+        if (!root) return res;
+        queue<TreeNode*> q;
+        q.push(root);
+        
+        while (!q.empty()) {
+            int n = q.size();
+            vector<int> tmp;
             for (int i = 0; i < n; ++i) {
-                TreeNode* curr = nodeQueue.front();
-                if (curr->left) nodeQueue.push(curr->left);
-                if (curr->right) nodeQueue.push(curr->right);
-                curr_res.push_back(curr->val);
-                nodeQueue.pop();
+                TreeNode* curr = q.front();
+                q.pop();
+                tmp.push_back(curr->val);
+                if (curr->left) q.push(curr->left);
+                if (curr->right) q.push(curr->right);
             }
-            res.push_back(curr_res);
+            res.push_back(tmp);
         }
         return res;
     }
