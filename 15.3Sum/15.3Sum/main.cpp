@@ -12,55 +12,31 @@
 
 using namespace std;
 
-//vector<vector<int> > threeSum(vector<int> &num) {
-//    
-//    vector<vector<int> > res;
-//    
-//    std::sort(num.begin(), num.end());
-//    
-//    for (int i = 0; i < num.size(); i++) {
-//        
-//        int target = -num[i];
-//        int front = i + 1;
-//        int back = num.size() - 1;
-//        
-//        while (front < back) {
-//            
-//            int sum = num[front] + num[back];
-//            
-//            // Finding answer which start from number num[i]
-//            if (sum < target)
-//                front++;
-//            
-//            else if (sum > target)
-//                back--;
-//            
-//            else {
-//                vector<int> triplet(3, 0);
-//                triplet[0] = num[i];
-//                triplet[1] = num[front];
-//                triplet[2] = num[back];
-//                res.push_back(triplet);
-//                
-//                // Processing duplicates of Number 2
-//                // Rolling the front pointer to the next different number forwards
-//                while (front < back && num[front] == triplet[1]) front++;
-//                
-//                // Processing duplicates of Number 3
-//                // Rolling the back pointer to the next different number backwards
-//                while (front < back && num[back] == triplet[2]) rear--;
-//            }
-//            
-//        }
-//        
-//        // Processing duplicates of Number 1
-//        while (i + 1 < num.size() && num[i + 1] == num[i])
-//            i++;
-//        
-//    }
-//    
-//    return res;
-//}
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        vector<vector<int>> res;
+        if (nums.empty()) return res;
+        sort(nums.begin(), nums.end());
+        int n = nums.size();
+        for (int i = 0; i < n - 2; ++i) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            int l = i + 1, h = n - 1;
+            while (l < h) {
+                int currSum = nums[l] + nums[h] + nums[i];
+                if (currSum < 0) l++;
+                else if (currSum > 0) h--;
+                else {
+                    res.push_back({nums[i], nums[l], nums[h]});
+                    while (l < h && nums[l + 1] == nums[l]) l++;
+                    while (l < h && nums[h - 1] == nums[h]) h--;
+                    l++;h--;
+                }
+            }
+        }
+        return res;
+    }
+};
 
 class Solution {
 public:
