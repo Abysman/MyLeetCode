@@ -7,19 +7,28 @@
 //
 
 #include <iostream>
-
+#include <vector>
+#include <string>
+#include <map>
+#include <queue>
+using namespace std;
 class Solution {
 public:
     struct comp{
+        comp(int t) {this->t = t;}
         bool operator()(pair<string, int> a, pair<string, int> b) {
             if (a.second == b.second) return a.first < b.first;
             else return a.second > b.second;
         }
+        int t;
     };
     vector<string> topKFrequent(vector<string>& words, int k) {
         vector<string> res;
         map<string, int> m;
-        priority_queue<pair<string, int>, vector<pair<string, int>>, comp> pq;
+        comp a = comp(3);
+        priority_queue<pair<string, int>, vector<pair<string, int>>, decltype([3](pair<string, int> a, pair<string, int> b){
+            return 1 > 0;
+        })> pq;
         int count = k;
         for (int i = 0; i < (int)words.size(); ++i) {
             m[words[i]]++;
