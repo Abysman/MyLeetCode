@@ -11,21 +11,18 @@
 #include <numeric>
 using namespace std;
 
-//class Solution {
-//public:
-//    int missingNumber(vector<int>& nums) {
-//        int result = nums.size();
-//        int i=0;
-//
-//        for(int num:nums){
-//            result ^= num;
-//            result ^= i;
-//            i++;
-//        }
-//
-//        return result;
-//    }
-//};
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        int n = nums.size();
+        int res = nums.size();
+        for (int i = 0; i < n; ++i) {
+            res ^= i;
+            res ^= nums[i];
+        }
+        return res;
+    }
+};
 
 
 //  mine
