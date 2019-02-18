@@ -13,40 +13,22 @@ using namespace std;
 class Solution {
 public:
     string longestPalindrome(string s) {
-        int len = s.length();
-        if (len < 2) return s;
-        int i = 0, j = len - 1, maxLen = 0, index = 0, currLen = 0;
-        for (int i = 0; i < len; ++i) {
-            if (len - i <= maxLen / 2) break;
-            if (s[i] == s[i+1]) {
-                currLen = helper(s, i, 1);
-                if (currLen > maxLen) {
-                    maxLen = currLen;
-                    index = i;
-                }
+        if (s.size() < 2) return s;
+        int start = 0, max_len = 1, len = s.size();
+        int i = 0;
+        while (i < len) {
+            if (len - i <= max_len / 2) break;
+            int left = i, right = i;
+            while (right < len - 1 && s[right + 1] == s[right]) right++;
+            i = right + 1;
+            while (left > 0 && right < len - 1 && s[right + 1] == s[left - 1]) {
+                left--;
+                right++;
             }
-            currLen = helper(s, i, 0);
-            if (currLen > maxLen) {
-                maxLen = currLen;
-                index = i;
-            }
+            int curr_len = right - left + 1;
+            if (curr_len > max_len) {max_len = curr_len; start = left;}
         }
-        return s.substr(index - (maxLen - 1) / 2, maxLen);
-    }
-    
-    int helper(string s, int index, int flag) {
-        int i = index - 1;
-        int j = index + 1;
-        int currLen = 1;
-        if (flag == 1) {
-            i = index;
-            currLen = 0;
-        }
-        while (i >= 0 && j <= s.length() - 1) {
-            if (s[i--] == s[j++]) currLen += 2;
-            else return currLen;
-        }
-        return currLen;
+        return s.substr(start, max_len);
     }
 };
 
