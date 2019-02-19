@@ -15,20 +15,27 @@ class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
         if (wordDict.empty()) return false;
-        vector<bool> record(s.length() + 1, false);
-        record[0] = true;
-        for (int i = 1; i <= s.length(); ++i) {
-            for (int j = i - 1; j >= 0; j--) {
-                if (record[j]) {
+        unordered_set<string> record;
+        
+        int len = s.size();
+        vector<bool> dp(len + 1, false);
+        dp[0] = true;
+        for (string word: wordDict) record.insert(word);
+        
+        for (int i = 1; i <= len; ++i) {
+            for (int j = i - 1; j >= 0; --j) {
+                if (dp[j]) {
                     string curr = s.substr(j, i - j);
-                    if (find(wordDict.begin(), wordDict.end(), curr) != wordDict.end()) {
-                        record[i] = true;
+                    if (record.find(curr) != record.end()) {
+                        dp[i] = true;
                         break;
                     }
                 }
+                
             }
+            
         }
-        return record[s.length()];
+        return dp[len];
     }
 };
 
