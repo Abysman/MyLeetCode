@@ -33,26 +33,29 @@ using namespace std;
  *     Interval(int s, int e) : start(s), end(e) {}
  * };
  */
+
 class Solution {
 public:
     vector<Interval> merge(vector<Interval>& intervals) {
-        if (intervals.empty()) return vector<Interval> ();
-        intervals.push_back(Interval(INT_MAX, INT_MAX));
+        int n = intervals.size();
+        if (n < 2) return intervals;
+        sort(intervals.begin(), intervals.end(), [](Interval a, Interval b) {
+            if (a.start == b.start) return a.end < b.end;
+            else return a.start < b.start;
+        });
         vector<Interval> res;
-        sort(intervals.begin(), intervals.end(), [](Interval a, Interval b){return a.start < b.start;});
-        Interval curr = intervals[0];
-        
-        for (int i = 1; i < intervals.size(); ++i) {
-            if (curr.end < intervals[i].start) {
-                res.push_back(curr);
-                curr = intervals[i];
+        Interval prev = intervals[0];
+        for (int i = 1; i < n; ++i) {
+            Interval curr = intervals[i];
+            if (curr.start > prev.end) {
+                res.push_back(prev);
+                prev = curr;
             }
-            else {
-                if (curr.end < intervals[i].end) {
-                    curr.end = intervals[i].end;
-                }
+            else if (curr.start <= prev.end && curr.end >= prev.end) {
+                prev.end = curr.end;
             }
         }
+        res.push_back(prev);
         return res;
     }
 };
