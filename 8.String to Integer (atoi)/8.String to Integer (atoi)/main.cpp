@@ -11,16 +11,15 @@
 class Solution {
 public:
     int myAtoi(string str) {
-        int sign = 1, base = 0, curr = 0;
-        while (str[curr] == ' ') curr++;
-        if (str[curr] == '+' || str[curr] == '-') sign = 1 - 2 * (str[curr++] == '-');
-        while (str[curr] >= '0' && str[curr] <= '9') {
-            if (base > INT_MAX / 10 || (base == INT_MAX / 10 && str[curr] - '0' > 7)) {
-                return sign == 1 ? INT_MAX : INT_MIN;
-            }
-            base = base * 10 + (str[curr++] - '0');
+        if (str.empty()) return 0;
+        int len = str.size(), i = 0, flag = 1, res = 0;
+        while (i < len && str[i] == ' ') i++;
+        if (str[i] == '-' || str[i] == '+') flag = 1 - 2 * (str[i++] == '-');
+        while (i < len && isdigit(str[i])) {
+            if (res > INT_MAX / 10 || (res == INT_MAX / 10 && str[i] > '7')) return flag == 1 ? INT_MAX :INT_MIN;
+            res =  res * 10 + (str[i++] - '0');
         }
-        return sign * base;
+        return res * flag;
     }
 };
 
