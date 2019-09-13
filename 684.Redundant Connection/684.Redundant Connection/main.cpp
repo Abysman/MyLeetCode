@@ -8,6 +8,40 @@
 
 #include <iostream>
 
+//  union find
+class Solution {
+    unordered_map<int, int> m;
+    int res = -1;
+public:
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+        if (edges.empty()) return vector<int> ();
+        for (int i = 0; i < edges.size(); ++i) {
+            uni(edges[i][0], edges[i][1], i);
+        }
+        return edges[res];
+    }
+    
+    int find(int n) {
+        if (!m.count(n)) {
+            m[n] = n;
+        }
+        if (m[n] != n) {
+            m[n] = find(m[n]);
+        }
+        return m[n];
+    }
+    
+    void uni(int a, int b, int index) {
+        a = find(a), b= find(b);
+        if (a != b) {
+            m[a] = b;
+        } else {
+            if (index > res) res = index;
+        }
+    }
+    
+};
+
 class Solution {
 public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
