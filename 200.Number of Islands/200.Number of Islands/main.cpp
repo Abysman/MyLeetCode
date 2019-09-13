@@ -11,6 +11,57 @@
 
 using namespace std;
 
+//  union find
+class Solution {
+    unordered_map<int, int> island;
+    int count = 0;
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        if (grid.empty() || grid[0].empty()) return 0;
+        int rows = grid.size(), cols = grid[0].size();
+        vector<pair<int, int>> dirs = {{1, 0}, {0, 1}};
+        for (auto rows: grid) {
+            for (auto i: rows) {
+                if (i == '1') count++;
+            }
+        }
+        for (int x = 0; x < rows; ++x) {
+            for (int y = 0; y < cols; ++y) {
+                if (grid[x][y] == '1') {
+                    for (auto dir: dirs) {
+                        int nextX = x + dir.first;
+                        int nextY = y + dir.second;
+                        if (nextX >= 0 && nextX < rows && nextY >= 0 && nextY < cols &&
+                            grid[nextX][nextY] == '1') {
+                            uni(x * cols + y, nextX * cols + nextY);
+                        }
+                    }
+                }
+                
+            }
+        }
+        return count;
+    }
+    
+    int find(int n) {
+        if (!island.count(n)) {
+            island[n] = n;
+        }
+        if (island[n] != n) {
+            island[n] = find(island[n]);
+        }
+        return island[n];
+    }
+    
+    void uni(int a, int b) {
+        a = find(a), b = find(b);
+        if (a != b) {
+            island[a] = island[b];
+            count--;
+        }
+    }
+};
+
 class Solution {
 public:
     int numIslands(vector<vector<char>>& grid) {
