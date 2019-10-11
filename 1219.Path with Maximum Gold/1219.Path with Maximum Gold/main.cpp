@@ -2,52 +2,43 @@
 //  main.cpp
 //  1219.Path with Maximum Gold
 //
-//  Created by stevenxu on 10/6/19.
+//  Created by stevenxu on 10/11/19.
 //  Copyright © 2019 stevenxu. All rights reserved.
 //
 
 #include <iostream>
-#include <vector>
-#include <unordered_set>
-using namespace std;;
+
 
 class Solution {
-    vector<pair<int, int>> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    vector<vector<int>> dirs = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 public:
     int getMaximumGold(vector<vector<int>>& grid) {
-        unordered_set<int> visited;
-        int res = 0;
         int rows = grid.size(), cols = grid[0].size();
+        int res = 0;
         for (int i = 0; i < rows; ++i) {
             for (int j = 0; j < cols; ++j) {
-                if (visited.find(i * cols + j) == visited.end() && grid[i][j] != 0 && (i == 0 || j == 0)) {
-                    unordered_set<int> currVisited;
-                    visited.insert(i * cols + j);
-                    dfs(grid, i, j, visited, currVisited, res, 0);
-                }
+                res = max(res, dfs(grid, i, j));
             }
         }
         return res;
     }
-        
-    void dfs(vector<vector<int>> grid, int i, int j, unordered_set<int>& visited, int& res, int curr) {
-        if (i == 0 || j == 0) visited.insert(i * grid[0].size() + j);
-        if (i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size() || grid[i][j] == 0) {
-            res = max(res, curr);
-            return;
-        }
-        curr += grid[i][j];
-        for (auto dir: dirs) {
-            dfs(grid, i + dir.first, j + dir.second, visited, res, curr);
-        }
-    }
     
+    int dfs(vector<vector<int>>& grid, int i, int j) {
+        if (i < 0 || i > grid.size() - 1 || j < 0 || j > grid[0].size() - 1) return 0;
+        if (grid[i][j] == 0) return 0;
+        int res = 0;
+        int temp = grid[i][j];
+        grid[i][j] = 0;
+        for (auto dir: dirs) {
+            int nextI = i + dir[0], nextJ = j + dir[1];
+            res = max(res, temp + dfs(grid, nextI, nextJ));
+        }
+        grid[i][j] = temp;
+        return res;
+    }
 };
 
 int main(int argc, const char * argv[]) {
-    vector<vector<int>> tests = {{0,6,0},{5,8,7},{0,9,0}};
-    Solution s = Solution();
-    s.getMaximumGold(tests);
     // insert code here...
     std::cout << "Hello, World!\n";
     return 0;

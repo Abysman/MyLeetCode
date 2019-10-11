@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA7873D0234A6B5E00093344 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA7873CF234A6B5E00093344 /* main.cpp */; };
+		CA0957C82350F9A900417519 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA0957C72350F9A900417519 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CA7873CA234A6B5E00093344 /* CopyFiles */ = {
+		CA0957C22350F9A900417519 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CA7873CC234A6B5E00093344 /* 1219.Path with Maximum Gold */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1219.Path with Maximum Gold"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA7873CF234A6B5E00093344 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CA0957C42350F9A900417519 /* 1219.Path with Maximum Gold */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1219.Path with Maximum Gold"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0957C72350F9A900417519 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA7873C9234A6B5E00093344 /* Frameworks */ = {
+		CA0957C12350F9A900417519 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA7873C3234A6B5E00093344 = {
+		CA0957BB2350F9A900417519 = {
 			isa = PBXGroup;
 			children = (
-				CA7873CE234A6B5E00093344 /* 1219.Path with Maximum Gold */,
-				CA7873CD234A6B5E00093344 /* Products */,
+				CA0957C62350F9A900417519 /* 1219.Path with Maximum Gold */,
+				CA0957C52350F9A900417519 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CA7873CD234A6B5E00093344 /* Products */ = {
+		CA0957C52350F9A900417519 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA7873CC234A6B5E00093344 /* 1219.Path with Maximum Gold */,
+				CA0957C42350F9A900417519 /* 1219.Path with Maximum Gold */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA7873CE234A6B5E00093344 /* 1219.Path with Maximum Gold */ = {
+		CA0957C62350F9A900417519 /* 1219.Path with Maximum Gold */ = {
 			isa = PBXGroup;
 			children = (
-				CA7873CF234A6B5E00093344 /* main.cpp */,
+				CA0957C72350F9A900417519 /* main.cpp */,
 			);
 			path = "1219.Path with Maximum Gold";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA7873CB234A6B5E00093344 /* 1219.Path with Maximum Gold */ = {
+		CA0957C32350F9A900417519 /* 1219.Path with Maximum Gold */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA7873D3234A6B5E00093344 /* Build configuration list for PBXNativeTarget "1219.Path with Maximum Gold" */;
+			buildConfigurationList = CA0957CB2350F9A900417519 /* Build configuration list for PBXNativeTarget "1219.Path with Maximum Gold" */;
 			buildPhases = (
-				CA7873C8234A6B5E00093344 /* Sources */,
-				CA7873C9234A6B5E00093344 /* Frameworks */,
-				CA7873CA234A6B5E00093344 /* CopyFiles */,
+				CA0957C02350F9A900417519 /* Sources */,
+				CA0957C12350F9A900417519 /* Frameworks */,
+				CA0957C22350F9A900417519 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,24 +79,24 @@
 			);
 			name = "1219.Path with Maximum Gold";
 			productName = "1219.Path with Maximum Gold";
-			productReference = CA7873CC234A6B5E00093344 /* 1219.Path with Maximum Gold */;
+			productReference = CA0957C42350F9A900417519 /* 1219.Path with Maximum Gold */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA7873C4234A6B5E00093344 /* Project object */ = {
+		CA0957BC2350F9A900417519 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = stevenxu;
 				TargetAttributes = {
-					CA7873CB234A6B5E00093344 = {
+					CA0957C32350F9A900417519 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = CA7873C7234A6B5E00093344 /* Build configuration list for PBXProject "1219.Path with Maximum Gold" */;
+			buildConfigurationList = CA0957BF2350F9A900417519 /* Build configuration list for PBXProject "1219.Path with Maximum Gold" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = CA7873C3234A6B5E00093344;
-			productRefGroup = CA7873CD234A6B5E00093344 /* Products */;
+			mainGroup = CA0957BB2350F9A900417519;
+			productRefGroup = CA0957C52350F9A900417519 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA7873CB234A6B5E00093344 /* 1219.Path with Maximum Gold */,
+				CA0957C32350F9A900417519 /* 1219.Path with Maximum Gold */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA7873C8234A6B5E00093344 /* Sources */ = {
+		CA0957C02350F9A900417519 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7873D0234A6B5E00093344 /* main.cpp in Sources */,
+				CA0957C82350F9A900417519 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CA7873D1234A6B5E00093344 /* Debug */ = {
+		CA0957C92350F9A900417519 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		CA7873D2234A6B5E00093344 /* Release */ = {
+		CA0957CA2350F9A900417519 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		CA7873D4234A6B5E00093344 /* Debug */ = {
+		CA0957CC2350F9A900417519 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		CA7873D5234A6B5E00093344 /* Release */ = {
+		CA0957CD2350F9A900417519 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA7873C7234A6B5E00093344 /* Build configuration list for PBXProject "1219.Path with Maximum Gold" */ = {
+		CA0957BF2350F9A900417519 /* Build configuration list for PBXProject "1219.Path with Maximum Gold" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA7873D1234A6B5E00093344 /* Debug */,
-				CA7873D2234A6B5E00093344 /* Release */,
+				CA0957C92350F9A900417519 /* Debug */,
+				CA0957CA2350F9A900417519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA7873D3234A6B5E00093344 /* Build configuration list for PBXNativeTarget "1219.Path with Maximum Gold" */ = {
+		CA0957CB2350F9A900417519 /* Build configuration list for PBXNativeTarget "1219.Path with Maximum Gold" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA7873D4234A6B5E00093344 /* Debug */,
-				CA7873D5234A6B5E00093344 /* Release */,
+				CA0957CC2350F9A900417519 /* Debug */,
+				CA0957CD2350F9A900417519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA7873C4234A6B5E00093344 /* Project object */;
+	rootObject = CA0957BC2350F9A900417519 /* Project object */;
 }
