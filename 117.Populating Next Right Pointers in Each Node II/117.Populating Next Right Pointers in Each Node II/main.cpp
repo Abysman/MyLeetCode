@@ -51,33 +51,24 @@ public:
 class Solution {
 public:
     Node* connect(Node* root) {
-        if (!root) return root;
-        Node *next = root, *curr = NULL, *last = NULL;
-        while (next) {
-            curr = next;
-            next = NULL;
-            last = NULL;
-            while (curr) {
-                if (curr->left && curr->right) {
-                    if (last) last->next = curr->left;
-                    curr->left->next = curr->right;
-                    last = curr->right;
-                    if (!next) next = curr->left;
+        Node *tmp = new Node(0), *res = root;
+        while (root) {
+            Node  *curr = tmp;
+            tmp->next = nullptr;
+            while (root) {
+                if (root->left) {
+                    curr->next = root->left;
+                    curr = curr->next;
                 }
-                else if (curr->left) {
-                    if (last) last->next = curr->left;
-                    last = curr->left;
-                    if (!next) next = curr->left;
+                if (root->right) {
+                    curr->next = root->right;
+                    curr = curr->next;
                 }
-                else if (curr->right) {
-                    if (last) last->next = curr->right;
-                    last = curr->right;
-                    if (!next) next = curr->right;
-                }
-                curr = curr->next;
+                root = root->next;
             }
+            root = tmp->next;
         }
-        return root;
+        return res;
     }
 };
 
