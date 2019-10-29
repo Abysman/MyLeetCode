@@ -21,27 +21,22 @@ using namespace std;
  * };
  */
 class Solution {
+    unordered_map<int, int> record;
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        if (preorder.empty() || (preorder.size() != inorder.size())) return NULL;
-        TreeNode* root = helper(preorder, inorder, 0, preorder.size() - 1, 0, inorder.size() - 1);
-        return root;
+        if (preorder.empty() || inorder.empty() || preorder.size() != inorder.size()) return nullptr;
+        for (int i = 0; i < inorder.size(); ++i) record[inorder[i]] = i;
+        int n = preorder.size();
+        return helper(preorder, inorder, 0, n - 1, 0, n - 1);
     }
     
-    TreeNode* helper(vector<int>& preorder, vector<int>& inorder, int preS, int preE, int inS, int inE) {
-        if (preS > preE || inS > inE) {
-            return NULL;
-        }
-        
-        TreeNode* currNode = new TreeNode(preorder[preS]);
-        
-        for (int i = inS; i <= inE; ++i) {
-            if (inorder[i] == preorder[preS]) {
-                currNode->left = helper(preorder, inorder, preS + 1, preS + i - inS, inS, i - 1);
-                currNode->right = helper(preorder, inorder, preS + i - inS + 1, preE, i + 1, inE);
-            }
-        }
-        return currNode;
+    TreeNode* helper(vector<int>& preorder, vector<int>& inorder, int pL, int pR, int iL, int iR) {
+        if ((pL > pR) || (iL > iR)) return nullptr;
+        TreeNode* root = new TreeNode(preorder[pL]);
+        int index = record[preorder[pL]];
+        root->left = helper(preorder, inorder, pL + 1, pL + index - iL, iL, index - 1);
+        root->right = helper(preorder, inorder, pL + index -iL + 1, pR, index + 1, iR);
+        return root;
     }
 };
 
