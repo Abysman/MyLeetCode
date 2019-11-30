@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CAF5885D2089D20900CA1F08 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAF5885C2089D20900CA1F08 /* main.cpp */; };
+		CA27BC3823932B5900BE0381 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA27BC3723932B5900BE0381 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CAF588572089D20900CA1F08 /* CopyFiles */ = {
+		CA27BC3223932B5900BE0381 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CAF588592089D20900CA1F08 /* 156.Binary Tree Upside Down */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "156.Binary Tree Upside Down"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAF5885C2089D20900CA1F08 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CA27BC3423932B5900BE0381 /* 156.Binary Tree Upside Down */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "156.Binary Tree Upside Down"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA27BC3723932B5900BE0381 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CAF588562089D20900CA1F08 /* Frameworks */ = {
+		CA27BC3123932B5900BE0381 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CAF588502089D20900CA1F08 = {
+		CA27BC2B23932B5900BE0381 = {
 			isa = PBXGroup;
 			children = (
-				CAF5885B2089D20900CA1F08 /* 156.Binary Tree Upside Down */,
-				CAF5885A2089D20900CA1F08 /* Products */,
+				CA27BC3623932B5900BE0381 /* 156.Binary Tree Upside Down */,
+				CA27BC3523932B5900BE0381 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CAF5885A2089D20900CA1F08 /* Products */ = {
+		CA27BC3523932B5900BE0381 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CAF588592089D20900CA1F08 /* 156.Binary Tree Upside Down */,
+				CA27BC3423932B5900BE0381 /* 156.Binary Tree Upside Down */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CAF5885B2089D20900CA1F08 /* 156.Binary Tree Upside Down */ = {
+		CA27BC3623932B5900BE0381 /* 156.Binary Tree Upside Down */ = {
 			isa = PBXGroup;
 			children = (
-				CAF5885C2089D20900CA1F08 /* main.cpp */,
+				CA27BC3723932B5900BE0381 /* main.cpp */,
 			);
 			path = "156.Binary Tree Upside Down";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CAF588582089D20900CA1F08 /* 156.Binary Tree Upside Down */ = {
+		CA27BC3323932B5900BE0381 /* 156.Binary Tree Upside Down */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAF588602089D20900CA1F08 /* Build configuration list for PBXNativeTarget "156.Binary Tree Upside Down" */;
+			buildConfigurationList = CA27BC3B23932B5900BE0381 /* Build configuration list for PBXNativeTarget "156.Binary Tree Upside Down" */;
 			buildPhases = (
-				CAF588552089D20900CA1F08 /* Sources */,
-				CAF588562089D20900CA1F08 /* Frameworks */,
-				CAF588572089D20900CA1F08 /* CopyFiles */,
+				CA27BC3023932B5900BE0381 /* Sources */,
+				CA27BC3123932B5900BE0381 /* Frameworks */,
+				CA27BC3223932B5900BE0381 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,53 +79,54 @@
 			);
 			name = "156.Binary Tree Upside Down";
 			productName = "156.Binary Tree Upside Down";
-			productReference = CAF588592089D20900CA1F08 /* 156.Binary Tree Upside Down */;
+			productReference = CA27BC3423932B5900BE0381 /* 156.Binary Tree Upside Down */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CAF588512089D20900CA1F08 /* Project object */ = {
+		CA27BC2C23932B5900BE0381 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = Abysman;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = stevenxu;
 				TargetAttributes = {
-					CAF588582089D20900CA1F08 = {
-						CreatedOnToolsVersion = 9.3;
+					CA27BC3323932B5900BE0381 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = CAF588542089D20900CA1F08 /* Build configuration list for PBXProject "156.Binary Tree Upside Down" */;
+			buildConfigurationList = CA27BC2F23932B5900BE0381 /* Build configuration list for PBXProject "156.Binary Tree Upside Down" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = CAF588502089D20900CA1F08;
-			productRefGroup = CAF5885A2089D20900CA1F08 /* Products */;
+			mainGroup = CA27BC2B23932B5900BE0381;
+			productRefGroup = CA27BC3523932B5900BE0381 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CAF588582089D20900CA1F08 /* 156.Binary Tree Upside Down */,
+				CA27BC3323932B5900BE0381 /* 156.Binary Tree Upside Down */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CAF588552089D20900CA1F08 /* Sources */ = {
+		CA27BC3023932B5900BE0381 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF5885D2089D20900CA1F08 /* main.cpp in Sources */,
+				CA27BC3823932B5900BE0381 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CAF5885E2089D20900CA1F08 /* Debug */ = {
+		CA27BC3923932B5900BE0381 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -157,7 +158,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -176,14 +176,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		CAF5885F2089D20900CA1F08 /* Release */ = {
+		CA27BC3A23932B5900BE0381 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,7 +216,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -228,13 +228,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		CAF588612089D20900CA1F08 /* Debug */ = {
+		CA27BC3C23932B5900BE0381 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -242,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		CAF588622089D20900CA1F08 /* Release */ = {
+		CA27BC3D23932B5900BE0381 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -253,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CAF588542089D20900CA1F08 /* Build configuration list for PBXProject "156.Binary Tree Upside Down" */ = {
+		CA27BC2F23932B5900BE0381 /* Build configuration list for PBXProject "156.Binary Tree Upside Down" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CAF5885E2089D20900CA1F08 /* Debug */,
-				CAF5885F2089D20900CA1F08 /* Release */,
+				CA27BC3923932B5900BE0381 /* Debug */,
+				CA27BC3A23932B5900BE0381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAF588602089D20900CA1F08 /* Build configuration list for PBXNativeTarget "156.Binary Tree Upside Down" */ = {
+		CA27BC3B23932B5900BE0381 /* Build configuration list for PBXNativeTarget "156.Binary Tree Upside Down" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CAF588612089D20900CA1F08 /* Debug */,
-				CAF588622089D20900CA1F08 /* Release */,
+				CA27BC3C23932B5900BE0381 /* Debug */,
+				CA27BC3D23932B5900BE0381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CAF588512089D20900CA1F08 /* Project object */;
+	rootObject = CA27BC2C23932B5900BE0381 /* Project object */;
 }
