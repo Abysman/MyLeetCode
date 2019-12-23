@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA3DD26D23B019DE00510C00 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA3DD26C23B019DE00510C00 /* main.cpp */; };
+		CA9A062823B051730008FB65 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA9A062723B051730008FB65 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CA3DD26723B019DE00510C00 /* CopyFiles */ = {
+		CA9A062223B051730008FB65 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CA3DD26923B019DE00510C00 /* 1282.Group the People Given the Group Size They Belong To */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1282.Group the People Given the Group Size They Belong To"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA3DD26C23B019DE00510C00 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CA9A062423B051730008FB65 /* 1282.Group the People Given the Group Size They Belong To */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1282.Group the People Given the Group Size They Belong To"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9A062723B051730008FB65 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA3DD26623B019DE00510C00 /* Frameworks */ = {
+		CA9A062123B051730008FB65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA3DD26023B019DE00510C00 = {
+		CA9A061B23B051730008FB65 = {
 			isa = PBXGroup;
 			children = (
-				CA3DD26B23B019DE00510C00 /* 1282.Group the People Given the Group Size They Belong To */,
-				CA3DD26A23B019DE00510C00 /* Products */,
+				CA9A062623B051730008FB65 /* 1282.Group the People Given the Group Size They Belong To */,
+				CA9A062523B051730008FB65 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CA3DD26A23B019DE00510C00 /* Products */ = {
+		CA9A062523B051730008FB65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA3DD26923B019DE00510C00 /* 1282.Group the People Given the Group Size They Belong To */,
+				CA9A062423B051730008FB65 /* 1282.Group the People Given the Group Size They Belong To */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA3DD26B23B019DE00510C00 /* 1282.Group the People Given the Group Size They Belong To */ = {
+		CA9A062623B051730008FB65 /* 1282.Group the People Given the Group Size They Belong To */ = {
 			isa = PBXGroup;
 			children = (
-				CA3DD26C23B019DE00510C00 /* main.cpp */,
+				CA9A062723B051730008FB65 /* main.cpp */,
 			);
 			path = "1282.Group the People Given the Group Size They Belong To";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA3DD26823B019DE00510C00 /* 1282.Group the People Given the Group Size They Belong To */ = {
+		CA9A062323B051730008FB65 /* 1282.Group the People Given the Group Size They Belong To */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA3DD27023B019DE00510C00 /* Build configuration list for PBXNativeTarget "1282.Group the People Given the Group Size They Belong To" */;
+			buildConfigurationList = CA9A062B23B051740008FB65 /* Build configuration list for PBXNativeTarget "1282.Group the People Given the Group Size They Belong To" */;
 			buildPhases = (
-				CA3DD26523B019DE00510C00 /* Sources */,
-				CA3DD26623B019DE00510C00 /* Frameworks */,
-				CA3DD26723B019DE00510C00 /* CopyFiles */,
+				CA9A062023B051730008FB65 /* Sources */,
+				CA9A062123B051730008FB65 /* Frameworks */,
+				CA9A062223B051730008FB65 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,24 +79,24 @@
 			);
 			name = "1282.Group the People Given the Group Size They Belong To";
 			productName = "1282.Group the People Given the Group Size They Belong To";
-			productReference = CA3DD26923B019DE00510C00 /* 1282.Group the People Given the Group Size They Belong To */;
+			productReference = CA9A062423B051730008FB65 /* 1282.Group the People Given the Group Size They Belong To */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA3DD26123B019DE00510C00 /* Project object */ = {
+		CA9A061C23B051730008FB65 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = stevenxu;
 				TargetAttributes = {
-					CA3DD26823B019DE00510C00 = {
+					CA9A062323B051730008FB65 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = CA3DD26423B019DE00510C00 /* Build configuration list for PBXProject "1282.Group the People Given the Group Size They Belong To" */;
+			buildConfigurationList = CA9A061F23B051730008FB65 /* Build configuration list for PBXProject "1282.Group the People Given the Group Size They Belong To" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = CA3DD26023B019DE00510C00;
-			productRefGroup = CA3DD26A23B019DE00510C00 /* Products */;
+			mainGroup = CA9A061B23B051730008FB65;
+			productRefGroup = CA9A062523B051730008FB65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA3DD26823B019DE00510C00 /* 1282.Group the People Given the Group Size They Belong To */,
+				CA9A062323B051730008FB65 /* 1282.Group the People Given the Group Size They Belong To */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA3DD26523B019DE00510C00 /* Sources */ = {
+		CA9A062023B051730008FB65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3DD26D23B019DE00510C00 /* main.cpp in Sources */,
+				CA9A062823B051730008FB65 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CA3DD26E23B019DE00510C00 /* Debug */ = {
+		CA9A062923B051730008FB65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		CA3DD26F23B019DE00510C00 /* Release */ = {
+		CA9A062A23B051730008FB65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		CA3DD27123B019DE00510C00 /* Debug */ = {
+		CA9A062C23B051740008FB65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		CA3DD27223B019DE00510C00 /* Release */ = {
+		CA9A062D23B051740008FB65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA3DD26423B019DE00510C00 /* Build configuration list for PBXProject "1282.Group the People Given the Group Size They Belong To" */ = {
+		CA9A061F23B051730008FB65 /* Build configuration list for PBXProject "1282.Group the People Given the Group Size They Belong To" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA3DD26E23B019DE00510C00 /* Debug */,
-				CA3DD26F23B019DE00510C00 /* Release */,
+				CA9A062923B051730008FB65 /* Debug */,
+				CA9A062A23B051730008FB65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA3DD27023B019DE00510C00 /* Build configuration list for PBXNativeTarget "1282.Group the People Given the Group Size They Belong To" */ = {
+		CA9A062B23B051740008FB65 /* Build configuration list for PBXNativeTarget "1282.Group the People Given the Group Size They Belong To" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA3DD27123B019DE00510C00 /* Debug */,
-				CA3DD27223B019DE00510C00 /* Release */,
+				CA9A062C23B051740008FB65 /* Debug */,
+				CA9A062D23B051740008FB65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA3DD26123B019DE00510C00 /* Project object */;
+	rootObject = CA9A061C23B051730008FB65 /* Project object */;
 }
